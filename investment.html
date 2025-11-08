@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Rules for Investment Portfolio Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(52, 152, 219, 0.8) 100%), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .rule-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .rule-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .rule-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .rule-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .quote-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .btn-gold {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-gold:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+        }
+        
+        .key-point {
+            background-color: #fff9e6;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chart-line me-2"></i>Bold Business Analytics
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rules">Golden Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#strategies">Strategies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Golden Rules for Investment Portfolio Management</h1>
+            <p class="lead mb-4">Master these fundamental principles to build and maintain a successful investment portfolio</p>
+            <a href="#rules" class="btn btn-gold btn-lg">Explore the Rules</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Mastering Portfolio Management</h2>
+                    <p>Successful investment portfolio management isn't about finding the next big stock or timing the market perfectly. It's about following proven principles that stand the test of time and market cycles.</p>
+                    <p>These golden rules have been developed through decades of market observation, academic research, and practical experience from successful investors worldwide.</p>
+                    <div class="key-point">
+                        <h5><i class="fas fa-lightbulb text-warning me-2"></i>Key Insight</h5>
+                        <p class="mb-0">The most successful investors aren't necessarily those with the highest IQ, but those who can maintain discipline and emotional control during market fluctuations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Investment Portfolio" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Golden Rules Section -->
+    <section id="rules" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">The Golden Rules</h2>
+            <p class="text-center mb-5">Follow these 10 essential principles for successful portfolio management</p>
+            
+            <div class="row">
+                <!-- Rule 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">1</span> Define Clear Investment Objectives</h4>
+                            <p class="card-text">Before investing, establish clear financial goals with specific timeframes. Your portfolio strategy should align with whether you're saving for retirement, a down payment, education, or other objectives.</p>
+                            <ul>
+                                <li>Set specific, measurable, achievable, relevant, and time-bound (SMART) goals</li>
+                                <li>Align investments with your time horizon</li>
+                                <li>Regularly review and adjust goals as life circumstances change</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">2</span> Diversify Your Investments</h4>
+                            <p class="card-text">Don't put all your eggs in one basket. Spread your investments across different asset classes, sectors, and geographical regions to reduce risk.</p>
+                            <ul>
+                                <li>Allocate across stocks, bonds, real estate, and commodities</li>
+                                <li>Include both domestic and international investments</li>
+                                <li>Consider different market capitalizations (large, mid, small cap)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 3 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">3</span> Understand Your Risk Tolerance</h4>
+                            <p class="card-text">Invest according to your ability to withstand market fluctuations emotionally and financially. Your risk tolerance should guide your asset allocation.</p>
+                            <ul>
+                                <li>Assess both your financial capacity and emotional comfort with risk</li>
+                                <li>Younger investors can typically tolerate more risk</li>
+                                <li>Adjust risk exposure as you approach financial goals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 4 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">4</span> Think Long-Term</h4>
+                            <p class="card-text">Successful investing requires a long-term perspective. Avoid making decisions based on short-term market noise or emotional reactions.</p>
+                            <ul>
+                                <li>Focus on years and decades, not days and weeks</li>
+                                <li>Market timing is extremely difficult—time in the market beats timing the market</li>
+                                <li>Compound returns work best over extended periods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 5 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">5</span> Rebalance Regularly</h4>
+                            <p class="card-text">Periodically adjust your portfolio back to its target allocation to maintain your desired risk level and take advantage of market movements.</p>
+                            <ul>
+                                <li>Rebalance at least annually or when allocations deviate significantly</li>
+                                <li>Sell high and buy low by rebalancing</li>
+                                <li>Consider tax implications when rebalancing taxable accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 6 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">6</span> Minimize Costs and Taxes</h4>
+                            <p class="card-text">Investment costs and taxes can significantly erode returns over time. Be mindful of fees and employ tax-efficient strategies.</p>
+                            <ul>
+                                <li>Choose low-cost investment vehicles like index funds and ETFs</li>
+                                <li>Be aware of transaction costs and account fees</li>
+                                <li>Utilize tax-advantaged accounts and tax-loss harvesting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 7 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">7</span> Stay Informed But Avoid Overreacting</h4>
+                            <p class="card-text">Keep abreast of market developments and economic trends, but avoid making impulsive decisions based on daily news cycles.</p>
+                            <ul>
+                                <li>Focus on fundamental analysis rather than short-term price movements</li>
+                                <li>Understand the difference between market volatility and permanent loss</li>
+                                <li>Develop a process for evaluating new information objectively</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 8 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">8</span> Practice Consistent Investing</h4>
+                            <p class="card-text">Regular contributions to your portfolio, regardless of market conditions, can smooth out purchase prices through dollar-cost averaging.</p>
+                            <ul>
+                                <li>Set up automatic investment plans</li>
+                                <li>Continue investing during market downturns</li>
+                                <li>Increase contributions as your income grows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 9 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">9</span> Know What You Own and Why</h4>
+                            <p class="card-text">Understand each investment in your portfolio and its role in your overall strategy. Avoid investments you don't fully comprehend.</p>
+                            <ul>
+                                <li>Research each security or fund before investing</li>
+                                <li>Understand how each investment contributes to your diversification</li>
+                                <li>Regularly review holdings to ensure they still align with your strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rule 10 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card rule-card h-100">
+                        <div class="card-body p-4">
+                            <div class="rule-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="card-title"><span class="rule-number">10</span> Control Your Emotions</h4>
+                            <p class="card-text">Investment success often depends more on psychological discipline than financial intelligence. Avoid greed at market peaks and fear during downturns.</p>
+                            <ul>
+                                <li>Develop a written investment plan to follow during emotional times</li>
+                                <li>Remember that market cycles are normal</li>
+                                <li>Seek objective advice when feeling uncertain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"The individual investor should act consistently as an investor and not as a speculator. This means that he should be able to justify every purchase he makes and each price he pays by impersonal, objective reasoning that satisfies him that he is getting more than his money's worth for his purchase."</p>
+                        <footer class="blockquote-footer mt-3 text-white-50">Benjamin Graham, <cite title="Source Title">The Intelligent Investor</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Strategies -->
+    <section id="strategies" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Advanced Portfolio Strategies</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chess-knight fa-3x text-primary mb-3"></i>
+                            <h5>Strategic Asset Allocation</h5>
+                            <p>Establish long-term target allocations based on your goals and risk tolerance, with periodic rebalancing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chess-queen fa-3x text-primary mb-3"></i>
+                            <h5>Tactical Asset Allocation</h5>
+                            <p>Make short-term adjustments to your portfolio to capitalize on market opportunities or avoid risks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chess-board fa-3x text-primary mb-3"></i>
+                            <h5>Core-Satellite Approach</h5>
+                            <p>Build a core of low-cost index funds supplemented with actively managed satellite positions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>PortfolioPro Advisory</h4>
+                    <p>Providing evidence-based investment guidance to help you achieve your financial goals.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#rules" class="text-white text-decoration-none">Golden Rules</a></li>
+                        <li><a href="#strategies" class="text-white text-decoration-none">Strategies</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Investment Calculator</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                   <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 130-B UET Society Lahore</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>0300-4174386</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info.bba@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 PortfolioPro Advisory. All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
