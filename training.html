@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Training Programs | Bold Business Analytics Training Center</title>
+    <meta name="description" content="Master in-demand skills with our professional training programs in Commodities, Forex, Equity Trading, Power BI, Web Development, and Mobile Apps Development.">
+    <meta name="keywords" content="commodities training, forex trading course, equity trading education, Power BI training, web development course, mobile app development training">
+    <meta name="author" content="Bold Business Analytics">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Professional Training Programs | Bold Business Analytics Training Center">
+    <meta property="og:description" content="Master in-demand skills with our professional training programs in trading, data analysis, and software development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.boldbusinessanalytics.com/training-center.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    <meta property="og:site_name" content="Bold Business Analytics">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Training Programs">
+    <meta name="twitter:description" content="Master in-demand skills with our professional training programs.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.boldbusinessanalytics.com/training-center.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Bold Business Analytics Training Center",
+      "description": "Professional training programs in trading, data analysis, and software development",
+      "url": "https://www.boldbusinessanalytics.com/training-center.html",
+      "logo": "https://www.boldbusinessanalytics.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "130-B UET Society",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-300-4174386",
+        "contactType": "customer service",
+        "email": "info.bba@gmail.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/boldbusinessanalytics",
+        "https://www.twitter.com/boldbusinessanalytics",
+        "https://www.linkedin.com/company/bold-business-analytics"
+      ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(243, 156, 18, 0.8) 100%), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .course-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .course-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .course-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .quote-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+        }
+        
+        .key-point {
+            background-color: #fff9e6;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        /* Improved accessibility for focus states */
+        .btn:focus, .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(243, 156, 18, 0.25);
+            border-color: var(--accent-color);
+        }
+        
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Breadcrumb navigation */
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0.75rem 0;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: var(--accent-color);
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .instructor-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-1 { border-top: 4px solid #3498db; }
+        .course-2 { border-top: 4px solid #e74c3c; }
+        .course-3 { border-top: 4px solid #2ecc71; }
+        .course-4 { border-top: 4px solid #9b59b6; }
+        .course-5 { border-top: 4px solid #f39c12; }
+        .course-6 { border-top: 4px solid #1abc9c; }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Bold Business Analytics Home">
+                <i class="fas fa-chart-line me-2" aria-hidden="true"></i>Bold Business Analytics
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instructors">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html#subsidiaries">Subsidiaries</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Training Center</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Professional Training Center</h1>
+            <p class="lead mb-4">Master in-demand skills with our industry-leading training programs in trading, data analysis, and software development</p>
+            <a href="#courses" class="btn btn-primary btn-lg">Explore Our Courses</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Introduction Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Transform Your Career with Professional Training</h2>
+                        <p>Our Training Center offers comprehensive, hands-on programs designed to equip you with practical skills that are in high demand across industries. Whether you're looking to enter financial markets, master data analysis, or build cutting-edge software applications, we have the right program for you.</p>
+                        <p>All our courses are developed and taught by industry professionals with years of practical experience. We focus on real-world applications rather than just theoretical concepts.</p>
+                        <div class="key-point">
+                            <h3 class="h5"><i class="fas fa-graduation-cap text-warning me-2" aria-hidden="true"></i>Why Choose Our Training?</h3>
+                            <p class="mb-0">Our graduates consistently achieve success in their careers thanks to our practical approach, industry connections, and career support services.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Professional training session in progress" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Why Learn With Us?</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <i class="fas fa-user-tie fa-3x text-primary mb-3" aria-hidden="true"></i>
+                            <h4>Industry Experts</h4>
+                            <p>Learn from professionals with years of real-world experience in their respective fields.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <i class="fas fa-laptop-code fa-3x text-primary mb-3" aria-hidden="true"></i>
+                            <h4>Hands-On Projects</h4>
+                            <p>Apply your learning through practical projects that simulate real-world challenges.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <i class="fas fa-briefcase fa-3x text-primary mb-3" aria-hidden="true"></i>
+                            <h4>Career Support</h4>
+                            <p>Get assistance with resume building, interview preparation, and job placement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Our Professional Training Programs</h2>
+                <p class="text-center mb-5">Choose from our comprehensive range of industry-focused courses</p>
+                
+                <div class="row">
+                    <!-- Commodities Trading -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-1 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-oil-well" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">8 Weeks</span>
+                                <h3 class="card-title h4">Commodities Trading</h3>
+                                <p class="card-text">Master the fundamentals of commodities markets including energy, metals, and agricultural products. Learn trading strategies, risk management, and market analysis techniques.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>Commodities market fundamentals</li>
+                                    <li>Technical and fundamental analysis</li>
+                                    <li>Risk management strategies</li>
+                                    <li>Global supply chain dynamics</li>
+                                    <li>Trading platform proficiency</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $499</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forex Trading -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-2 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">10 Weeks</span>
+                                <h3 class="card-title h4">Forex Trading</h3>
+                                <p class="card-text">Become proficient in currency trading with our comprehensive forex course. Understand market dynamics, trading psychology, and develop profitable trading systems.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>Forex market structure</li>
+                                    <li>Currency pairs and correlations</li>
+                                    <li>Technical analysis and chart patterns</li>
+                                    <li>Risk management and position sizing</li>
+                                    <li>Automated trading strategies</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $599</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Equity Trading -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-3 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">12 Weeks</span>
+                                <h3 class="card-title h4">Equity Trading</h3>
+                                <p class="card-text">Learn to analyze and trade stocks effectively. From fundamental analysis to advanced trading strategies, this course covers everything you need to succeed in stock markets.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>Stock market fundamentals</li>
+                                    <li>Fundamental and technical analysis</li>
+                                    <li>Portfolio management</li>
+                                    <li>Options and derivatives trading</li>
+                                    <li>Risk management techniques</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $649</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Power BI for Business Data Analysis -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-4 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">6 Weeks</span>
+                                <h3 class="card-title h4">Power BI for Business Data Analysis</h3>
+                                <p class="card-text">Transform raw data into actionable insights with Microsoft Power BI. Learn to create interactive dashboards, reports, and perform advanced business intelligence analysis.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>Data modeling and transformation</li>
+                                    <li>DAX formulas and calculations</li>
+                                    <li>Interactive dashboard creation</li>
+                                    <li>Data visualization best practices</li>
+                                    <li>Power BI service and mobile apps</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $449</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-5 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">16 Weeks</span>
+                                <h3 class="card-title h4">Web Development</h3>
+                                <p class="card-text">Become a full-stack web developer with our comprehensive program. Learn front-end and back-end technologies to build modern, responsive web applications.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>HTML5, CSS3, and JavaScript</li>
+                                    <li>React.js and modern front-end frameworks</li>
+                                    <li>Node.js and Express.js</li>
+                                    <li>Database design with MongoDB and SQL</li>
+                                    <li>Deployment and DevOps basics</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $899</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Apps Development -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card course-card course-6 h-100">
+                            <div class="card-body p-4">
+                                <div class="course-icon">
+                                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                </div>
+                                <span class="course-badge">14 Weeks</span>
+                                <h3 class="card-title h4">Mobile Apps Development</h3>
+                                <p class="card-text">Learn to build cross-platform mobile applications using React Native and Flutter. Create professional apps for both iOS and Android from a single codebase.</p>
+                                <h5 class="h6 mt-4">Key Topics:</h5>
+                                <ul>
+                                    <li>React Native fundamentals</li>
+                                    <li>Flutter and Dart programming</li>
+                                    <li>UI/UX design for mobile</li>
+                                    <li>API integration and state management</li>
+                                    <li>App store deployment</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <span class="fw-bold text-primary">Price: $799</span>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-3">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"Education is the most powerful weapon which you can use to change the world."</p>
+                            <footer class="blockquote-footer mt-3 text-white-50">Nelson Mandela</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section id="instructors" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Meet Our Expert Instructors</h2>
+                <p class="text-center mb-5">Learn from industry professionals with years of practical experience</p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card instructor-card">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="Sarah Johnson - Trading Expert">
+                            <div class="card-body">
+                                <h5 class="card-title">Sarah Johnson</h5>
+                                <p class="card-text text-muted">Trading Specialist</p>
+                                <p class="card-text">With over 15 years in financial markets, Sarah specializes in commodities, forex, and equity trading strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card instructor-card">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="Michael Chen - Data Analytics Expert">
+                            <div class="card-body">
+                                <h5 class="card-title">Michael Chen</h5>
+                                <p class="card-text text-muted">Data Analytics Expert</p>
+                                <p class="card-text">Michael has implemented BI solutions for Fortune 500 companies and specializes in Power BI and data visualization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card instructor-card">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="David Rodriguez - Software Development Expert">
+                            <div class="card-body">
+                                <h5 class="card-title">David Rodriguez</h5>
+                                <p class="card-text text-muted">Software Development Lead</p>
+                                <p class="card-text">David has led development teams at tech startups and enterprises, with expertise in web and mobile technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Enroll in a Course Today</h2>
+                <p class="text-center mb-5">Contact us to discuss your training needs or enroll in any of our programs</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card border-0 shadow">
+                            <div class="card-body p-4">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="courseInterest" class="form-label">Course of Interest</label>
+                                        <select class="form-select" id="courseInterest" required>
+                                            <option value="" selected>Select a course</option>
+                                            <option value="commodities">Commodities Trading</option>
+                                            <option value="forex">Forex Trading</option>
+                                            <option value="equity">Equity Trading</option>
+                                            <option value="powerbi">Power BI for Business Data Analysis</option>
+                                            <option value="webdev">Web Development</option>
+                                            <option value="mobiledev">Mobile Apps Development</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="experience" class="form-label">Current Experience Level</label>
+                                        <select class="form-select" id="experience">
+                                            <option value="" selected>Select your experience</option>
+                                            <option value="beginner">Beginner</option>
+                                            <option value="intermediate">Intermediate</option>
+                                            <option value="advanced">Advanced</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Additional Questions or Comments</label>
+                                        <textarea class="form-control" id="message" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Request Information</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>Bold Business Analytics Training Center</h4>
+                    <p>Providing industry-leading professional training to help you advance your career and achieve your goals.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="#instructors" class="text-white text-decoration-none">Instructors</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> 130-B UET Society Lahore</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2" aria-hidden="true"></i>0300-4174386</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2" aria-hidden="true"></i> info.bba@gmail.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2" aria-hidden="true"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 Bold Business Analytics. All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
