@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bold Business Analytics - Our Subsidiaries</title>
+    <title>Bold Business Analytics - Diversified Business Solutions & Subsidiaries</title>
+    <meta name="description" content="Bold Business Analytics offers diversified business solutions through six specialized subsidiaries including investment management, trading, education, and software development.">
+    <meta name="keywords" content="business analytics, investment management, forex trading, equity trading, training center, software development, financial education">
+    <meta name="author" content="Bold Business Analytics">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Bold Business Analytics - Diversified Business Solutions">
+    <meta property="og:description" content="Driving business excellence through diversified expertise and innovative solutions across six specialized subsidiaries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.boldbusinessanalytics.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.boldbusinessanalytics.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bold Business Analytics",
+      "url": "https://www.boldbusinessanalytics.com",
+      "logo": "https://www.boldbusinessanalytics.com/logo.png",
+      "description": "Diversified business group with expertise spanning multiple industries including investment management, trading, education, and software development.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "130-B UET Society",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-300-4174386",
+        "contactType": "customer service",
+        "email": "info.bba@gmail.com",
+        "areaServed": "PK",
+        "availableLanguage": ["English", "Urdu"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/boldbusinessanalytics",
+        "https://www.twitter.com/boldbusinessanalytics",
+        "https://www.linkedin.com/company/bold-business-analytics",
+        "https://www.instagram.com/boldbusinessanalytics"
+      ]
+    }
+    </script>
+    
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -97,16 +147,41 @@
             background-color: #2980b9;
             border-color: #2980b9;
         }
+        
+        /* Improved accessibility for focus states */
+        .btn:focus, .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+            border-color: var(--secondary-color);
+        }
+        
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-chart-line me-2"></i>Bold Business Analytics
+            <a class="navbar-brand" href="#" aria-label="Bold Business Analytics Home">
+                <i class="fas fa-chart-line me-2" aria-hidden="true"></i>Bold Business Analytics
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -126,212 +201,216 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <header class="hero-section">
         <div class="container">
             <h1 class="display-4 fw-bold mb-4">Bold Business Analytics</h1>
             <p class="lead mb-4">Driving business excellence through diversified expertise and innovative solutions</p>
             <a href="#subsidiaries" class="btn btn-primary btn-lg">Explore Our Subsidiaries</a>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="section-title">About Bold Business Analytics</h2>
-                    <p>Bold Business Analytics is a diversified business group with expertise spanning multiple industries. Our integrated approach allows us to deliver comprehensive solutions to our clients while maintaining excellence in each specialized domain.</p>
-                    <p>With six distinct subsidiaries, we leverage cross-functional expertise to create synergies that drive innovation and deliver exceptional value to our stakeholders.</p>
-                    <p>Our commitment to data-driven decision making, technological innovation, and continuous learning forms the foundation of our success across all business units.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Business Analytics" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subsidiaries Section -->
-    <section id="subsidiaries" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Subsidiaries</h2>
-            <p class="text-center mb-5">Discover the diverse range of services offered by our specialized subsidiaries</p>
-            
-            <div class="row">
-                <!-- Investment Portfolio Management -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-1 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-chart-pie"></i>
-                            </div>
-                            <h4 class="card-title">Investment Portfolio Management</h4>
-                            <p class="card-text">Our expert team provides comprehensive investment management services, creating diversified portfolios tailored to your financial goals and risk tolerance. We leverage advanced analytics to maximize returns while managing risk effectively.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Customized investment strategies</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Risk assessment and management</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Performance monitoring and reporting</li>
-                            </ul>
-                            <a href="investment.html" class="btn btn-primary btn-lg"> Golden Rules </a>
-
-                        </div>
-                                    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">About Bold Business Analytics</h2>
+                        <p>Bold Business Analytics is a diversified business group with expertise spanning multiple industries. Our integrated approach allows us to deliver comprehensive solutions to our clients while maintaining excellence in each specialized domain.</p>
+                        <p>With six distinct subsidiaries, we leverage cross-functional expertise to create synergies that drive innovation and deliver exceptional value to our stakeholders.</p>
+                        <p>Our commitment to data-driven decision making, technological innovation, and continuous learning forms the foundation of our success across all business units.</p>
                     </div>
-                </div>
-                
-                <!-- Commodities & Forex Trading -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-2 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-money-bill-wave"></i>
-                            </div>
-                            <h4 class="card-title">Commodities & Forex Trading</h4>
-                            <p class="card-text">Specializing in global commodities and foreign exchange markets, we provide expert trading services with real-time market analysis. Our sophisticated algorithms and experienced traders help navigate volatile markets for optimal results.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Real-time market analysis</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Algorithmic trading strategies</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Risk mitigation techniques</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Equity Trading -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-3 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h4 class="card-title">Equity Trading</h4>
-                            <p class="card-text">Our equity trading division focuses on stock markets with advanced analytical tools and proprietary trading strategies. We provide execution services for institutional clients and manage proprietary capital across global equity markets.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Advanced analytical tools</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Proprietary trading strategies</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Global market access</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Training Center -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-4 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h4 class="card-title">Training Center</h4>
-                            <p class="card-text">Our professional training center offers specialized courses in financial markets, data analytics, and business intelligence. We provide practical, hands-on training designed by industry experts to bridge the skills gap in today's competitive market.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Industry expert instructors</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Practical, hands-on approach</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Certification programs</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Teaching Institute / Academy -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-5 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <h4 class="card-title">Teaching Institute / Academy</h4>
-                            <p class="card-text">Our accredited academy offers comprehensive educational programs in business analytics, finance, and technology. We provide degree-equivalent courses with industry recognition, preparing the next generation of business leaders.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Accredited programs</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Industry-recognized certifications</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Career placement assistance</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Software Development House -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card subsidiary-card subsidiary-6 h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="card-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <h4 class="card-title">Software Development House</h4>
-                            <p class="card-text">Our software development team creates cutting-edge solutions for financial analytics, trading platforms, and business intelligence. We develop proprietary software for internal use and offer custom development services to clients.</p>
-                            <ul class="list-unstyled text-start">
-                                <li><i class="fas fa-check text-success me-2"></i>Custom software solutions</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Financial technology expertise</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Agile development methodology</li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Business Analytics team collaborating in modern office" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <div class="card border-0 shadow">
-                        <div class="card-body p-4">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="firstName" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="firstName" required>
+        <!-- Subsidiaries Section -->
+        <section id="subsidiaries" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Subsidiaries</h2>
+                <p class="text-center mb-5">Discover the diverse range of services offered by our specialized subsidiaries</p>
+                
+                <div class="row">
+                    <!-- Investment Portfolio Management -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-1 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Investment Portfolio Management</h3>
+                                <p class="card-text">Our expert team provides comprehensive investment management services, creating diversified portfolios tailored to your financial goals and risk tolerance. We leverage advanced analytics to maximize returns while managing risk effectively.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Customized investment strategies</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Risk assessment and management</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Performance monitoring and reporting</li>
+                                </ul>
+                                <a href="investment.html" class="btn btn-primary btn-lg"> Golden Rules </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Commodities & Forex Trading -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-2 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Commodities & Forex Trading</h3>
+                                <p class="card-text">Specializing in global commodities and foreign exchange markets, we provide expert trading services with real-time market analysis. Our sophisticated algorithms and experienced traders help navigate volatile markets for optimal results.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Real-time market analysis</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Algorithmic trading strategies</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Risk mitigation techniques</li>
+                                </ul>
+                                <a href="commodity-forex-trading.html" class="btn btn-primary btn-lg"> Trading Principles </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Equity Trading -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-3 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Equity Trading</h3>
+                                <p class="card-text">Our equity trading division focuses on stock markets with advanced analytical tools and proprietary trading strategies. We provide execution services for institutional clients and manage proprietary capital across global equity markets.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Advanced analytical tools</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Proprietary trading strategies</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Global market access</li>
+                                </ul>
+                                <a href="equity-trading.html" class="btn btn-primary btn-lg"> Trading Principles </a>
+
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Training Center -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-4 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Training Center</h3>
+                                <p class="card-text">Our professional training center offers specialized courses in financial markets, data analytics, and business intelligence. We provide practical, hands-on training designed by industry experts to bridge the skills gap in today's competitive market.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Industry expert instructors</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Practical, hands-on approach</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Certification programs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Teaching Institute / Academy -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-5 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-university" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Teaching Institute / Academy</h3>
+                                <p class="card-text">Our accredited academy offers comprehensive educational programs in business analytics, finance, and technology. We provide degree-equivalent courses with industry recognition, preparing the next generation of business leaders.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Accredited programs</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Industry-recognized certifications</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Career placement assistance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Software Development House -->
+                    <article class="col-lg-4 col-md-6 mb-4">
+                        <div class="card subsidiary-card subsidiary-6 h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="card-icon">
+                                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="card-title h4">Software Development House</h3>
+                                <p class="card-text">Our software development team creates cutting-edge solutions for financial analytics, trading platforms, and business intelligence. We develop proprietary software for internal use and offer custom development services to clients.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Custom software solutions</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Financial technology expertise</li>
+                                    <li><i class="fas fa-check text-success me-2" aria-hidden="true"></i>Agile development methodology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="card border-0 shadow">
+                            <div class="card-body p-4">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="lastName" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName" required>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
                                     </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subsidiary" class="form-label">Interested Subsidiary</label>
-                                    <select class="form-select" id="subsidiary">
-                                        <option selected>Select a subsidiary</option>
-                                        <option value="investment">Investment Portfolio Management</option>
-                                        <option value="commodities">Commodities & Forex Trading</option>
-                                        <option value="equity">Equity Trading</option>
-                                        <option value="training">Training Center</option>
-                                        <option value="academy">Teaching Institute / Academy</option>
-                                        <option value="software">Software Development House</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
+                                    <div class="mb-3">
+                                        <label for="subsidiary" class="form-label">Interested Subsidiary</label>
+                                        <select class="form-select" id="subsidiary">
+                                            <option selected>Select a subsidiary</option>
+                                            <option value="investment">Investment Portfolio Management</option>
+                                            <option value="commodities">Commodities & Forex Trading</option>
+                                            <option value="equity">Equity Trading</option>
+                                            <option value="training">Training Center</option>
+                                            <option value="academy">Teaching Institute / Academy</option>
+                                            <option value="software">Software Development House</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h4>Bold Business Analytics</h4>
                     <p>Driving business excellence through diversified expertise and innovative solutions.</p>
                     <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
@@ -346,9 +425,9 @@
                 <div class="col-md-4">
                     <h5>Contact Information</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 130-B UET Society Lahore</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i>0300-4174386</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info.bba@gmail.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> 130-B UET Society Lahore</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2" aria-hidden="true"></i>0300-4174386</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2" aria-hidden="true"></i> info.bba@gmail.com</li>
                     </ul>
                 </div>
             </div>
