@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Trading Packages for Investors | B2 Analytic</title>
+    <meta name="description" content="Explore our comprehensive trading packages for investors. Choose from profit-sharing models, fixed returns, high-frequency trading, and customized solutions.">
+    <meta name="keywords" content="trading packages, investment plans, profit sharing, fixed returns, equity trading, commodities trading">
+    <meta name="author" content="B2 Analytic">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Professional Trading Packages for Investors | B2 Analytic">
+    <meta property="og:description" content="Explore our comprehensive trading packages for investors with profit-sharing and fixed return options.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.b2analytic.com/trading-packages.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    <meta property="og:site_name" content="B2 Analytic">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Trading Packages for Investors">
+    <meta name="twitter:description" content="Explore our comprehensive trading packages for investors with profit-sharing and fixed return options.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.b2analytic.com/trading-packages.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Trading Packages for Investors",
+      "description": "Professional trading packages including profit-sharing models, fixed returns, and customized solutions for investors",
+      "provider": {
+        "@type": "Organization",
+        "name": "B2 Analytic"
+      },
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Trading Packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "50/50 Profit Sharing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fixed Return Model"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(231, 76, 60, 0.8) 100%), url('https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .package-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .package-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        
+        .package-price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .package-features {
+            padding: 20px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li i {
+            color: var(--accent-color);
+            margin-right: 10px;
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .quote-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+            color: white;
+        }
+        
+        .key-point {
+            background-color: #ffeaea;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        /* Improved accessibility for focus states */
+        .btn:focus, .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(231, 76, 60, 0.25);
+            border-color: var(--accent-color);
+        }
+        
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Breadcrumb navigation */
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0.75rem 0;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: var(--accent-color);
+        }
+        
+        .package-1 { border-top: 4px solid #3498db; }
+        .package-2 { border-top: 4px solid #e74c3c; }
+        .package-3 { border-top: 4px solid #2ecc71; }
+        .package-4 { border-top: 4px solid #f39c12; }
+        .package-5 { border-top: 4px solid #9b59b6; }
+        .package-6 { border-top: 4px solid #1abc9c; }
+        .package-7 { border-top: 4px solid #34495e; }
+        .package-8 { border-top: 4px solid #d35400; }
+        
+        .comparison-table {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="B2 Analytic Home">
+                <i class="fas fa-chart-line me-2" aria-hidden="true"></i>B2 Analytic
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparison">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html#services">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Investment Packages</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Professional Investment Packages</h1>
+            <p class="lead mb-4">Choose from our comprehensive range of investment packages designed for optimal returns</p>
+            <a href="#packages" class="btn btn-primary btn-lg">Explore Packages</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Introduction Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title">Investment Opportunities</h2>
+                        <p>At B2 Analytic, we offer a diverse range of trading packages tailored to meet different investment goals and risk profiles. Whether you're looking for profit-sharing arrangements, fixed returns, or specialized trading strategies, we have a solution for you.</p>
+                        
+                        <div class="key-point">
+                            <h5><i class="fas fa-lightbulb text-warning me-2"></i>Why Invest With Us?</h5>
+                            <p class="mb-0">Our experienced trading team utilizes proven strategies, rigorous risk management, and cutting-edge technology to maximize returns while protecting your capital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Trading Packages</h2>
+                <p class="text-center mb-5">Select the package that best matches your investment objectives</p>
+                
+                <div class="row">
+                    <!-- Package 1: 50/50 Profit Sharing -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-1 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">50/50 Profit Sharing</h3>
+                                <div class="package-price">Equal Split</div>
+                                <p class="mb-0">Partnership Model</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> 50% Investor / 50% Trader Profit Split</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $1,000</li>
+                                    <li><i class="fas fa-check"></i> 1 Month Minimum Commitment</li>
+                                    <li><i class="fas fa-check"></i> Maximum 2% Risk Per Trade</li>
+                                    <li><i class="fas fa-check"></i> 15% Maximum Drawdown</li>
+                                    <li><i class="fas fa-check"></i> Weekly Performance Updates</li>
+                                    <li><i class="fas fa-check"></i> Monthly Profit Distributions</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 2: Fixed Return Model -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-2 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Fixed Return</h3>
+                                <div class="package-price">2% Monthly</div>
+                                <p class="mb-0">Predictable Returns</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> 2% Fixed Monthly Return</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $5,000</li>
+                                    <li><i class="fas fa-check"></i> 6 Month Minimum Contract</li>
+                                    <li><i class="fas fa-check"></i> Low to Moderate Risk Strategies</li>
+                                    <li><i class="fas fa-check"></i> Optional Monthly Compounding</li>
+                                    <li><i class="fas fa-check"></i> Capital Protection Focus</li>
+                                    <li><i class="fas fa-check"></i> 30-Day Termination Notice</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 3: High-Frequency Scalping -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-3 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">High-Frequency Scalping</h3>
+                                <div class="package-price">60/40 Split</div>
+                                <p class="mb-0">Quick Returns</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> 60% Investor / 40% Trader Split</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $2,000</li>
+                                    <li><i class="fas fa-check"></i> 15 Min - 2 Hour Trade Duration</li>
+                                    <li><i class="fas fa-check"></i> 5-15 Trades Per Day</li>
+                                    <li><i class="fas fa-check"></i> 1:1.5 Minimum Risk/Reward</li>
+                                    <li><i class="fas fa-check"></i> Maximum 4 Hour Holding Period</li>
+                                    <li><i class="fas fa-check"></i> Ideal for Quick Returns</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 4: Performance-Based Tiered -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-4 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Tiered Performance</h3>
+                                <div class="package-price">Bronze/Silver/Gold</div>
+                                <p class="mb-0">Scaled Benefits</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Bronze: 20% Above 5% Monthly</li>
+                                    <li><i class="fas fa-check"></i> Silver: 25% Above 7% Monthly</li>
+                                    <li><i class="fas fa-check"></i> Gold: 30% Above 10% Monthly</li>
+                                    <li><i class="fas fa-check"></i> High Water Mark Protection</li>
+                                    <li><i class="fas fa-check"></i> Reduced Management Fees</li>
+                                    <li><i class="fas fa-check"></i> Investment: $3K - $50K+</li>
+                                    <li><i class="fas fa-check"></i> Progressive Risk Limits</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 5: Customized Solutions -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-5 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Custom Solutions</h3>
+                                <div class="package-price">Flexible</div>
+                                <p class="mb-0">Tailored to You</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Sector-Specific Trading</li>
+                                    <li><i class="fas fa-check"></i> Negotiable Profit Split (45%-60%)</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $20,000</li>
+                                    <li><i class="fas fa-check"></i> Specialized Market Knowledge</li>
+                                    <li><i class="fas fa-check"></i> Algorithmic Trading Options</li>
+                                    <li><i class="fas fa-check"></i> Real-Time Strategy Monitoring</li>
+                                    <li><i class="fas fa-check"></i> Personalized Risk Parameters</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 6: Islamic/Sharia-Compliant -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card package-card package-6 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Sharia-Compliant</h3>
+                                <div class="package-price">50/50 Split</div>
+                                <p class="mb-0">Ethical Investing</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Fully Sharia-Compliant Execution</li>
+                                    <li><i class="fas fa-check"></i> 50% Investor / 50% Trader Split</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $5,000</li>
+                                    <li><i class="fas fa-check"></i> Swap-Free Accounts</li>
+                                    <li><i class="fas fa-check"></i> Screened Asset Selection</li>
+                                    <li><i class="fas fa-check"></i> No Overnight Interest</li>
+                                    <li><i class="fas fa-check"></i> Ethical Investment Focus</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Packages Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Specialized Trading Strategies</h2>
+                
+                <div class="row">
+                    <!-- Package 7: Short-Term Momentum -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card package-card package-7 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Short-Term Momentum</h3>
+                                <div class="package-price">55/45 Split</div>
+                                <p class="mb-0">Swing & Day Trading</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Swing Trading (1-5 Days)</li>
+                                    <li><i class="fas fa-check"></i> Day Trading (Same Day Only)</li>
+                                    <li><i class="fas fa-check"></i> 55% Investor / 45% Trader Split</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $5,000</li>
+                                    <li><i class="fas fa-check"></i> Technical Analysis Driven</li>
+                                    <li><i class="fas fa-check"></i> 2-3% Maximum Risk Per Position</li>
+                                    <li><i class="fas fa-check"></i> Price Action & Momentum Focus</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 8: Conservative Income -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card package-card package-8 h-100">
+                            <div class="package-header">
+                                <h3 class="h4">Conservative Income</h3>
+                                <div class="package-price">70/30 Split</div>
+                                <p class="mb-0">Capital Preservation</p>
+                            </div>
+                            <div class="package-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Target Return: 1-1.5% Monthly</li>
+                                    <li><i class="fas fa-check"></i> 70% Investor / 30% Trader Split</li>
+                                    <li><i class="fas fa-check"></i> Minimum Investment: $25,000</li>
+                                    <li><i class="fas fa-check"></i> Income-Focused Strategies</li>
+                                    <li><i class="fas fa-check"></i> Low Volatility Approach</li>
+                                    <li><i class="fas fa-check"></i> Dividend & Options Strategies</li>
+                                    <li><i class="fas fa-check"></i> Capital Preservation Priority</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <a href="#contact" class="btn btn-primary">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section id="comparison" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Package Comparison</h2>
+                <p class="text-center mb-5">Compare our trading packages to find the perfect fit for your investment goals</p>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>50/50 Profit Sharing</th>
+                                <th>Fixed Return</th>
+                                <th>High-Frequency</th>
+                                <th>Tiered Performance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Profit Split</strong></td>
+                                <td>50% Investor / 50% Trader</td>
+                                <td>2% Fixed Monthly</td>
+                                <td>60% Investor / 40% Trader</td>
+                                <td>20-30% Performance Fee</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minimum Investment</strong></td>
+                                <td>$1,000</td>
+                                <td>$5,000</td>
+                                <td>$2,000</td>
+                                <td>$3,000 - $50,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Risk Profile</strong></td>
+                                <td>Moderate</td>
+                                <td>Low to Moderate</td>
+                                <td>High</td>
+                                <td>Moderate to High</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Time Horizon</strong></td>
+                                <td>1 Month Minimum</td>
+                                <td>6 Months Minimum</td>
+                                <td>Flexible</td>
+                                <td>3 Months Minimum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Best For</strong></td>
+                                <td>Partnership-minded investors</td>
+                                <td>Predictable returns seekers</td>
+                                <td>Active, quick-return investors</td>
+                                <td>Performance-focused investors</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"The stock market is filled with individuals who know the price of everything, but the value of nothing."</p>
+                            <footer class="blockquote-footer mt-3 text-white-50">Philip Fisher</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="section-title">Start Your Investment Journey</h2>
+                <p class="text-center mb-5">Contact us to discuss which trading package best suits your investment goals</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card border-0 shadow">
+                            <div class="card-body p-4">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="investmentAmount" class="form-label">Investment Amount</label>
+                                        <select class="form-select" id="investmentAmount">
+                                            <option selected>Select investment range</option>
+                                            <option value="1k-5k">$1,000 - $5,000</option>
+                                            <option value="5k-10k">$5,000 - $10,000</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="50k+">$50,000+</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="packageInterest" class="form-label">Package of Interest</label>
+                                        <select class="form-select" id="packageInterest">
+                                            <option selected>Select a package</option>
+                                            <option value="50-50">50/50 Profit Sharing</option>
+                                            <option value="fixed">Fixed Return (2% Monthly)</option>
+                                            <option value="scalping">High-Frequency Scalping</option>
+                                            <option value="tiered">Tiered Performance</option>
+                                            <option value="custom">Custom Solutions</option>
+                                            <option value="sharia">Sharia-Compliant</option>
+                                            <option value="momentum">Short-Term Momentum</option>
+                                            <option value="conservative">Conservative Income</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Investment Goals & Questions</label>
+                                        <textarea class="form-control" id="message" rows="4" placeholder="Please describe your investment goals, risk tolerance, and any specific questions you have..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Request Package Details</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>B2 Analytic</h4>
+                    <p>Professional trading services with transparent pricing and proven strategies.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#packages" class="text-white text-decoration-none">Packages</a></li>
+                        <li><a href="#comparison" class="text-white text-decoration-none">Comparison</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 130-B UET Society Lahore</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>0300-4174386</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@b2analytic.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 B2 Analytic. All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
