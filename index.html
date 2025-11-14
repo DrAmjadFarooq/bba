@@ -169,6 +169,36 @@
         .skip-link:focus {
             top: 0;
         }
+
+        /* Careers Section Styles */
+.career-opportunities .border {
+    border-color: #e9ecef !important;
+    transition: all 0.3s ease;
+}
+
+.career-opportunities .border:hover {
+    border-color: var(--secondary-color) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Ensure the section title matches your existing design */
+#careers .section-title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#careers .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
     </style>
 </head>
 <body>
@@ -198,6 +228,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+    <a class="nav-link" href="#careers">Careers</a>
+</li>
                 </ul>
             </div>
         </div>
@@ -358,6 +391,112 @@
             </div>
         </section>
 
+        <!-- Careers Section -->
+<section id="careers" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title">Join Our Team</h2>
+        <p class="text-center mb-5">Build your career with Bold Business Analytics and grow with a dynamic, innovative team</p>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-users fa-2x text-primary me-3"></i>
+                            <h4 class="card-title mb-0">Why Work With Us?</h4>
+                        </div>
+                        <p class="card-text">At Bold Business Analytics, we believe in nurturing talent and providing opportunities for professional growth in the financial and technology sectors.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Competitive compensation packages</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Continuous learning and development</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Collaborative work environment</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Cutting-edge technology exposure</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Career advancement opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-briefcase fa-2x text-primary me-3"></i>
+                            <h4 class="card-title mb-0">Current Opportunities</h4>
+                        </div>
+                        <p class="card-text">Explore our current openings and find the perfect role to match your skills and ambitions.</p>
+                        
+                        <div class="career-opportunities">
+                            <div class="d-flex justify-content-between align-items-center p-3 border rounded mb-3">
+                                <div>
+                                    <h5 class="mb-1">Commodity & Forex Trading Intern</h5>
+                                    <p class="mb-0 text-muted">Lahore, Pakistan | Stipend: Rs. 20,000/month</p>
+                                </div>
+                                <a href="internship.html" class="btn btn-primary btn-sm">Apply Now</a>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center p-3 border rounded mb-3">
+                                <div>
+                                    <h5 class="mb-1">Junior Financial Analyst</h5>
+                                    <p class="mb-0 text-muted">Lahore, Pakistan | Full-time</p>
+                                </div>
+                                <a href="#contact" class="btn btn-outline-primary btn-sm">Learn More</a>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center p-3 border rounded">
+                                <div>
+                                    <h5 class="mb-1">Software Development Trainee</h5>
+                                    <p class="mb-0 text-muted">Lahore, Pakistan | Training Program</p>
+                                </div>
+                                <a href="#contact" class="btn btn-outline-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                    <h4>Internship Programs</h4>
+                    <p>Gain hands-on experience through our structured internship programs in trading, analytics, and software development.</p>
+                    <a href="internship.html" class="btn btn-outline-primary">View Internships</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                    <h4>Career Growth</h4>
+                    <p>We invest in our employees' development with training programs, mentorship, and clear career progression paths.</p>
+                    <a href="#contact" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                    <h4>Culture & Values</h4>
+                    <p>Join a collaborative environment that values innovation, integrity, and excellence in everything we do.</p>
+                    <a href="#contact" class="btn btn-outline-primary">Our Culture</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <div class="card border-0 bg-light py-4">
+                <div class="card-body">
+                    <h3 class="card-title">Don't See the Perfect Role?</h3>
+                    <p class="card-text">We're always looking for talented individuals. Send us your resume and we'll contact you when a suitable position opens.</p>
+                    <a href="#contact" class="btn btn-primary">Submit Your Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-5">
             <div class="container">
@@ -405,6 +544,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -427,7 +567,7 @@
                         <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
                         <li><a href="#subsidiaries" class="text-white text-decoration-none">Our Subsidiaries</a></li>
                         <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#careers" class="text-white text-decoration-none">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
