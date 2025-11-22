@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Bold Business Analytics</title>
+    <meta name="description" content="Login to your Bold Business Analytics account to access trading platforms, investment portfolio management, and training resources.">
+    <meta name="keywords" content="login, bold business analytics, account access, trading platform login">
+    <meta name="author" content="Bold Business Analytics">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Login | Bold Business Analytics">
+    <meta property="og:description" content="Access your Bold Business Analytics account to manage your investments, trading activities, and training progress.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.boldbusinessanalytics.com/login.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.boldbusinessanalytics.com/login.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .login-hero {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9) 0%, rgba(243, 156, 18, 0.8) 100%), url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .login-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        
+        .login-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 450px;
+            width: 100%;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .login-card-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .login-card-header h2 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        
+        .login-card-header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .login-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .login-card-body {
+            padding: 40px;
+            background-color: white;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(243, 156, 18, 0.25);
+            outline: none;
+        }
+        
+        .input-group-text {
+            background-color: var(--light-color);
+            border: 2px solid #e9ecef;
+            border-right: none;
+            border-radius: 8px 0 0 8px;
+            color: var(--primary-color);
+        }
+        
+        .input-group .form-control {
+            border-left: none;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .input-group:focus-within .input-group-text {
+            border-color: var(--accent-color);
+        }
+        
+        .input-group:focus-within .form-control {
+            border-color: var(--accent-color);
+        }
+        
+        .btn-login {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-login:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+        }
+        
+        .btn-login:focus {
+            box-shadow: 0 0 0 0.25rem rgba(243, 156, 18, 0.5);
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-check-input:checked {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        
+        .form-check-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(243, 156, 18, 0.25);
+        }
+        
+        .forgot-password {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .forgot-password:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .alert {
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .alert-danger {
+            border-left-color: #dc3545;
+        }
+        
+        .alert-success {
+            border-left-color: #28a745;
+        }
+        
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: auto;
+        }
+        
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .login-hero {
+                padding: 60px 0 30px;
+            }
+            
+            .login-card-body {
+                padding: 30px 25px;
+            }
+            
+            .login-container {
+                padding: 20px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .login-hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .login-hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hero Section -->
+    <header class="login-hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Welcome Back</h1>
+            <p class="lead mb-0">Access your account to manage your investments, trading, and training</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="login-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card login-card">
+                        <div class="login-card-header">
+                            <div class="login-icon">
+                                <i class="fas fa-user-circle" aria-hidden="true"></i>
+                            </div>
+                            <h2>Account Login</h2>
+                            <p>Sign in to continue to your dashboard</p>
+                        </div>
+                        <div class="login-card-body">
+                            <form id="loginForm" method="POST" action="#">
+                                <!-- Alert message area (hidden by default) -->
+                                <div id="alertContainer"></div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        <i class="fas fa-envelope me-2" aria-hidden="true"></i>Email Address
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        class="form-control" 
+                                        id="email" 
+                                        name="email"
+                                        placeholder="Enter your email address"
+                                        required
+                                        autocomplete="email"
+                                        aria-describedby="emailHelp"
+                                    >
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">
+                                        <i class="fas fa-lock me-2" aria-hidden="true"></i>Password
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-key" aria-hidden="true"></i>
+                                        </span>
+                                        <input 
+                                            type="password" 
+                                            class="form-control" 
+                                            id="password" 
+                                            name="password"
+                                            placeholder="Enter your password"
+                                            required
+                                            autocomplete="current-password"
+                                        >
+                                        <button 
+                                            class="btn btn-outline-secondary" 
+                                            type="button" 
+                                            id="togglePassword"
+                                            aria-label="Toggle password visibility"
+                                            style="border: 2px solid #e9ecef; border-left: none; border-radius: 0 8px 8px 0;"
+                                        >
+                                            <i class="fas fa-eye" id="eyeIcon" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="remember-forgot">
+                                    <div class="form-check">
+                                        <input 
+                                            class="form-check-input" 
+                                            type="checkbox" 
+                                            id="rememberMe"
+                                            name="rememberMe"
+                                        >
+                                        <label class="form-check-label" for="rememberMe">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="#forgot-password" class="forgot-password" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+                                        Forgot password?
+                                    </a>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-login">
+                                    <i class="fas fa-sign-in-alt me-2" aria-hidden="true"></i>Login
+                                </button>
+                                
+                                <div class="text-center mt-3">
+                                    <a href="index.html" class="btn btn-outline-secondary">
+                                        <i class="fas fa-arrow-left me-2" aria-hidden="true"></i>Back to Home
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: var(--primary-color); color: white;">
+                    <h5 class="modal-title" id="forgotPasswordModalLabel">
+                        <i class="fas fa-key me-2"></i>Reset Password
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your email address and we'll send you a link to reset your password.</p>
+                    <form id="forgotPasswordForm">
+                        <div class="mb-3">
+                            <label for="resetEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="resetEmail" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-login w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Send Reset Link
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>Bold Business Analytics</h4>
+                    <p>Providing professional trading education and comprehensive business solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="text-white" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="index.html#subsidiaries" class="text-white text-decoration-none">Subsidiaries</a></li>
+                        <li><a href="index.html#careers" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="index.html#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> 130-B UET Society Lahore</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2" aria-hidden="true"></i>0300-4174386</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2" aria-hidden="true"></i> boldbusinessanalytics@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p>&copy; 2023 Bold Business Analytics. All rights reserved. | <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import Firebase functions
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+        
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCO_Wje29Ua5IVEu9oXGEbkhp65mDHqIzA",
+            authDomain: "umer-bhai.firebaseapp.com",
+            projectId: "umer-bhai",
+            storageBucket: "umer-bhai.firebasestorage.app",
+            messagingSenderId: "564270497848",
+            appId: "1:564270497848:web:bcd57f3828d31f4b4166cd",
+            measurementId: "G-FFG6NJ7C5B"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        
+        // Allowed credentials
+        const ALLOWED_EMAIL = 'umer@gmail.com';
+        const ALLOWED_PASSWORD = 'umer@1234';
+        
+        // Check if user is already logged in
+        onAuthStateChanged(auth, (user) => {
+            if (user && user.email === ALLOWED_EMAIL) {
+                // User is logged in, redirect to admin page
+                window.location.href = 'admin.html';
+            }
+        });
+        
+        // Show alert function
+        function showAlert(message, type) {
+            const alertContainer = document.getElementById('alertContainer');
+            const alertClass = type === 'danger' ? 'alert-danger' : 
+                             type === 'success' ? 'alert-success' : 
+                             'alert-info';
+            
+            const alertHTML = `
+                <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+                    <i class="fas fa-${type === 'danger' ? 'exclamation-circle' : type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+            
+            alertContainer.innerHTML = alertHTML;
+        }
+        
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }
+        });
+        
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const submitBtn = document.querySelector('button[type="submit"]');
+            const submitBtnText = submitBtn.querySelector('i').parentElement;
+            
+            // Clear previous alerts
+            document.getElementById('alertContainer').innerHTML = '';
+            
+            // Basic validation
+            if (!email || !password) {
+                showAlert('Please fill in all fields.', 'danger');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showAlert('Please enter a valid email address.', 'danger');
+                return;
+            }
+            
+            // Check if email matches allowed email
+            if (email !== ALLOWED_EMAIL) {
+                showAlert('Invalid email or password. Access denied.', 'danger');
+                return;
+            }
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>Logging in...';
+            
+            try {
+                // Sign in with Firebase Auth
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                
+                // Check if email matches
+                if (user.email === ALLOWED_EMAIL) {
+                    showAlert('Login successful! Redirecting to admin panel...', 'success');
+                    // Redirect to admin page after 1 second
+                    setTimeout(() => {
+                        window.location.href = 'admin.html';
+                    }, 1000);
+                } else {
+                    // Sign out if email doesn't match
+                    await signOut(auth);
+                    showAlert('Access denied. Invalid credentials.', 'danger');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-sign-in-alt me-2"></i>Login';
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+                
+                let errorMessage = 'Invalid email or password. Access denied.';
+                
+                if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+                    errorMessage = 'Invalid email or password. Access denied.';
+                } else if (error.code === 'auth/invalid-email') {
+                    errorMessage = 'Invalid email format.';
+                } else if (error.code === 'auth/too-many-requests') {
+                    errorMessage = 'Too many failed attempts. Please try again later.';
+                } else {
+                    errorMessage = `Error: ${error.message}`;
+                }
+                
+                showAlert(errorMessage, 'danger');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-sign-in-alt me-2"></i>Login';
+            }
+        });
+        
+        // Forgot password form submission (disabled for security)
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Password reset is not available. Please contact administrator.');
+            const modal = bootstrap.Modal.getInstance(document.getElementById('forgotPasswordModal'));
+            modal.hide();
+        });
+    </script>
+</body>
+</html>
